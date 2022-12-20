@@ -1,5 +1,27 @@
 /* Basic styling  */
+$background-color: #C2D8AE;
+$screen-color: #E8EC67;
+$body-color: #D5E28B;
+$button-color-1: #967D69;
+$button-color-2: #92B9BD;
 
+body{
+    background: $background-color;
+}
+.calculator{
+    width: 370px;
+    height: 700px;
+    outline: 1px solid rgb(177, 150, 150);
+    border-radius: 35px;
+    margin: auto;
+
+    &__screen{
+        border-radius: 35px;
+        background-color: $screen-color;
+        width: 370px;
+        height: 190px
+    }
+}
 /* center calculator */
 
 /* CSS for screen and screenContent , calculation , result */
