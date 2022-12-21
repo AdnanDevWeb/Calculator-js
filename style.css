@@ -1,20 +1,86 @@
 /* Basic styling  */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background: #C2D8AE;
 }
 
 .calculator {
   width: 370px;
-  height: 700px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   outline: 1px solid rgb(177, 150, 150);
   border-radius: 35px;
-  margin: auto;
+  margin-left: 100px;
+  margin-top: 100px;
+  background-color: #D5E28B;
+  position: relative;
 }
 .calculator__screen {
   border-radius: 35px;
   background-color: #E8EC67;
   width: 370px;
   height: 190px;
+  position: relative;
+}
+.calculator__screen__calculs {
+  position: absolute;
+  bottom: 80px;
+  right: 20px;
+}
+.calculator__screen__calculs-result {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  font-size: 1.8rem;
+}
+.calculator__keys-container {
+  border-bottom-left-radius: 35px;
+  position: relative;
+  padding-top: 40px;
+}
+.calculator__keys-container::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  left: 0;
+  border: 1px solid rgb(134, 109, 109);
+}
+.calculator__keys-container button {
+  border: 0;
+  width: 89.4px;
+  height: 80px;
+  background: transparent;
+  font-size: 1.3em;
+  position: relative;
+}
+.calculator__keys-container button:nth-child(3)::before {
+  height: 317px !important;
+}
+.calculator__keys-container button:nth-child(17) {
+  border-bottom-left-radius: 35px;
+}
+
+.after, .calculator__keys-container button:nth-child(1)::after, .calculator__keys-container button:nth-child(5)::after, .calculator__keys-container button:nth-child(9)::after, .calculator__keys-container button:nth-child(13)::after {
+  position: absolute;
+  content: "";
+  width: 370px;
+  border: 1px solid rgb(134, 109, 109);
+  left: 0;
+  bottom: 0;
+}
+
+.before, .calculator__keys-container button:nth-child(1)::before, .calculator__keys-container button:nth-child(2)::before, .calculator__keys-container button:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  height: 398px;
+  border: 1px solid rgb(134, 109, 109);
+  right: 0;
+  top: 0;
 }
 
 /* center calculator */
