@@ -1,50 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- google font cdn -->
-    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap" rel="stylesheet">
+    <title>Calculator js</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Markup of calculator 👇 -->
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button class="span-two" data-ac>AC</button>
+        <button data-del>DEL</button>
+        <button data-operation>/</button>
+        <button data-num>1</button>
+        <button data-num>2</button>
+        <button data-num>3</button>
+        <button data-operation>*</button>
+        <button data-num>4</button>
+        <button data-num>5</button>
+        <button data-num>6</button>
+        <button data-operation>+</button>
+        <button data-num>7</button>
+        <button data-num>8</button>
+        <button data-num>9</button>
+        <button data-operation>-</button>
+        <button data-num>.</button>
+        <button data-num>0</button>
+        <button data-equals class="span-two">=</button>
 
-    <section class="calculator">
-        <section class="calculator__screen">
-            <p class="calculator__screen__calculs"></p>
-            <h1 class="calculator__screen__calculs-result"></h1>
-        </section>
-        <section class="calculator__keys-container">
-            <button class="orange-color clear">C</button>
-            <button class="orange-color del"><</button>
-            <button class="blue-color" data-operators>/</button>
-            <button class="blue-color" data-operators>*</button>
-            <button >7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="blue-color" data-operators>-</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="blue-color" data-operators>+</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="submit">=</button>
-            <button>0</button>
-            <button>.</button>
-
-        </section>
-    </section>
-
-
-    <script src="script.js"></script>
+    </div>
 </body>
-
 </html>
