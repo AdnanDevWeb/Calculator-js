@@ -1,12 +1,3 @@
-// targeted elements by id and assign into variables ( we’ll use these variables later in tutorial to print calculation text and result text )
-const calculs = document.querySelector('.calculator__screen__calculs')
-const calculsResult = document.querySelector('.calculator__screen__calculs-result')
-
-const keyContainer = document.querySelector('.calculator__keys-container')
-const clearButton = keyContainer.querySelector('.clear')
-const delButton = keyContainer.querySelector('.del')
-const submitButton = keyContainer.querySelector('.submit')
-/* function to insert number onclick */
 
 // targeting clear button by id and assign a blank value to the calculation and 0 to result on click event listener
 
